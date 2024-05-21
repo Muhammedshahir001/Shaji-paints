@@ -1,3 +1,8 @@
+*{
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
 .App {
   text-align: center;
 }
@@ -36,3 +41,18 @@
     transform: rotate(360deg);
   }
 }
+
+.about-heading{
+  text-decoration: underline yellow;
+}
+
+.sub-heading{
+  text-decoration: underline yellow;
+}
+
+
+
+.menufacture{
+  text-decoration: underline yellow;
+}
+
