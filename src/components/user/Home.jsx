@@ -16,6 +16,9 @@ import image45 from "../../images/image45.png";
 import Booking from "../../images/Book A Demo.png";
 
 function Home() {
+  const section = {
+    backgroundImage: "url(" + { image45 } + ")",
+  };
   const features = [
     {
       title: "Distibution",
@@ -50,7 +53,7 @@ function Home() {
     <>
       <Header />
       {/* Banner  */}
-      <div className="mx-auto w-svw overflow-hidden">
+      <div className="mx-auto w-svw overflow-x-hidden">
         <div
           id="carouselExampleControls"
           className="relative"
@@ -333,11 +336,11 @@ function Home() {
 
         {/* <img src={image44} alt="" /> */}
 
-        <section className="flex justify-center items-center">
-          <div className="relative">
-            <img src={image45} alt="" className="w-full" />
-            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-              <h2 className="text-black text-4xl font-extrabold">
+        <section className="flex   justify-center items-center">
+          <div className=" h-fit  w-screen bg-bannerImg ">
+            {/* <img src={image45} alt="" className=" h-full " /> */}
+            <div className=" text-center">
+              <h2 className="text-black lg:text-4xl md:text-2xl sm:text-xl  text-lg font-extrabold">
                 The Paints Recommended <br /> By Professionals
               </h2>
               <Link

@@ -3,7 +3,7 @@ import Home from "../../components/user/Home";
 
 function userHome() {
   return (
-    <div>
+    <div className="overflow-hidden w-screen">
       <Home />
     </div>
   );
