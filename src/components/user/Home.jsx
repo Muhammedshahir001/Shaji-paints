@@ -13,12 +13,10 @@ import menuImage from "../../images/Img 1.png";
 import { Link } from "react-router-dom";
 import imageInCorner from "../../images/image44.png";
 import image45 from "../../images/image45.png";
+import image44 from "../../images/image44.png";
 import Booking from "../../images/Book A Demo.png";
 
 function Home() {
-  const section = {
-    backgroundImage: "url(" + { image45 } + ")",
-  };
   const features = [
     {
       title: "Distibution",
@@ -108,7 +106,7 @@ function Home() {
               </p>
             </div>
 
-            <div className="flex px-12  flex-col mb-4">
+            <div className="flex lg:px-12  flex-col mb-4">
               <div className="flex   items-center mb-2">
                 <img src={team} style={{ width: "50px" }} alt="" />
                 <p>Team Of Professionals</p>
@@ -336,11 +334,11 @@ function Home() {
 
         {/* <img src={image44} alt="" /> */}
 
-        <section className="flex   justify-center items-center">
-          <div className=" h-fit  w-screen bg-bannerImg ">
-            {/* <img src={image45} alt="" className=" h-full " /> */}
-            <div className=" text-center">
-              <h2 className="text-black lg:text-4xl md:text-2xl sm:text-xl  text-lg font-extrabold">
+        <section className="relative flex justify-center items-center">
+          <div className="relative w-full">
+            <img src={image45} alt="" className="w-full h-auto" />
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
+              <h2 className="text-black lg:text-4xl md:text-2xl sm:text-xl text-lg font-extrabold">
                 The Paints Recommended <br /> By Professionals
               </h2>
               <Link
