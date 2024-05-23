@@ -106,7 +106,7 @@ function Home() {
               </p>
             </div>
 
-            <div className="flex lg:px-12  flex-col mb-4">
+            <div className="flex lg:px-0 md:px-0   px-16 sm:px-0  flex-col mb-4">
               <div className="flex   items-center mb-2">
                 <img src={team} style={{ width: "50px" }} alt="" />
                 <p>Team Of Professionals</p>
@@ -181,7 +181,7 @@ function Home() {
               <img
                 src={whatWeDo}
                 alt=""
-                className="max-w-full h-auto rounded md:-ml-32"
+                className="max-w-full  h-auto rounded  md:-ml-[1px]"
               />
             </div>
 
@@ -312,9 +312,9 @@ function Home() {
               src={Booking}
               alt=""
             />
-            <div className="absolute inset-0 flex justify-center items-center">
+            <div className="absolute inset-0 flex justify-center  items-center">
               {/* Container */}
-              <div className="bg-white mb-24 rounded-lg p-6 text-black ml-0 md:ml-[40rem]">
+              <div className="bg-white mb-24 rounded-lg p-6 text-black ml-0 md:ml-[25rem]">
                 {/* Heading */}
                 <h2 className="text-2xl w-full md:w-64 font-bold mb-4">
                   Need to try our <br />
@@ -335,23 +335,28 @@ function Home() {
         {/* <img src={image44} alt="" /> */}
 
         <section className="relative flex justify-center items-center">
-          <div className="relative w-full">
-            <img src={image45} alt="" className="w-full h-auto" />
-            <div className="absolute inset-0 flex flex-col justify-center items-center text-center">
-              <h2 className="text-black lg:text-4xl md:text-2xl sm:text-xl text-lg font-extrabold">
+          <div className="relative w-full ">
+            <img
+              src={image45}
+              alt=""
+              className="w-full h-auto"
+              style={{ display: "block" }}
+            />
+            <div className="absolute inset-0    flex flex-col justify-center items-center text-center p-4 h-">
+              <h2 className="text-black md:pt-10 mb-1 -mt-[15px] sm:pt-4 lg:pt-0  lg:text-3xl md:text-2xl sm:text-2xl text-[13px] pt-[52px] font-extrabold leading-tight">
                 The Paints Recommended <br /> By Professionals
               </h2>
-              <Link
+              <button
                 to="#"
-                className="bg-gray-900 text-white px-4 py-2 mt-8 md:mt-10 rounded-2xl w-full md:w-auto max-w-xs md:max-w-md font-bold text-center block"
+                className="bg-gray-900  md:w-28  w-[6rem]  text-[9px] mb-[30px] lg:w-full sm:text-sm sm:mb-10 lg:mb-0 text-white px-4 py-2 mt-1 md:mb-10 lg:mt-8 rounded-2xl max-w-xs md:max-w-md font-bold text-center block"
               >
                 Learn More
-              </Link>
+              </button>
             </div>
             <img
               src={imageInCorner}
               alt=""
-              className="absolute top-0 left-0 w-16 h-16"
+              className="absolute top-0 left-0 w-12 h-12 md:w-16 md:h-16"
             />
           </div>
         </section>
