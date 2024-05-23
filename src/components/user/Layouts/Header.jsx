@@ -18,7 +18,7 @@ function Header() {
       <div className="hidden lg:block">
         <div className=" flex gap-10 justify-between  p-5">
           <div className="ml-[5%]">
-            <img src={logo} className="w-fit h-8" alt="" />
+            <img src={logo} className="w-full h-8" alt="" />
           </div>
           <div
             className="flex md:order-2 space-x-3  rtl:space-x-reverse"
