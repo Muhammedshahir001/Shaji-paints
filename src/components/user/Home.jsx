@@ -189,16 +189,16 @@ function Home() {
               <h1 className="text-3xl font-bold mb-4">
                 <span className="sub-heading">What We Do Us</span>
               </h1>
-              <p className="text-lg text-justify">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate.
+              <p className="text-lg text-justify  about-section">
+                Welcome to ShajiPaints, where colors come to life and your
+                imagination takes center stage. As a leading paint company, we
+                are dedicated to transforming spaces and enhancing your
+                surroundings with a palette of vibrant hues and top-notch paint
+                solutions.
                 <br />
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                dolor in reprehenderit in voluptate.
+                Welcome to ShajiPaints, where colors come to life and your
+                imagination takes center stage. As a leading paint company, we
+                are dedicated to transforming.
               </p>
               <Link
                 to="#"
