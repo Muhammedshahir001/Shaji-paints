@@ -76,12 +76,12 @@ function Footer() {
               </Link>
             </div>
           </div>
-          <div className="grid grid-cols-2 pl-20 gap-8 sm:gap-6 sm:grid-cols-5">
-            <div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-5 gap-8 pl-4 sm:pl-8 md:pl-16 lg:pl-20 footer-box">
+            <div className="mb-8 md:mb-0">
               <h1 className="mb-6 text-base font-bold text-white uppercase dark:text-white">
                 Quick Links
               </h1>
-              <ul className="text-gray-500 dark:text-gray-400 ">
+              <ul className="text-gray-500 dark:text-gray-400">
                 <li className="mt-2">
                   <Link href="#" className="hover:underline text-white">
                     Become a Distributor
@@ -104,7 +104,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="mb-8 md:mb-0">
               <h1 className="mb-6 text-base font-bold text-white uppercase dark:text-white">
                 About us
               </h1>
@@ -126,7 +126,7 @@ function Footer() {
                 </li>
               </ul>
             </div>
-            <div>
+            <div className="mb-8 md:mb-0">
               <h1 className="mb-6 text-base font-bold text-white uppercase dark:text-white">
                 Legal
               </h1>
@@ -159,46 +159,16 @@ function Footer() {
               </h2>
               <ul className="text-white dark:text-gray-400 font-medium">
                 <li className="flex items-center mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-2 text-gray-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path d="M10 2c-3.07 0-5.7 1.6-7.23 4C1.77 7.36 1 8.62 1 10c0 2.76 2.24 5 5 5h.38c-.25.58-.38 1.24-.38 1.92 0 2.76 2.24 5 5 5s5-2.24 5-5c0-.68-.13-1.34-.38-1.92h.38c2.76 0 5-2.24 5-5 0-2.21-1.79-4-4-4zm0 9c-1.65 0-3-1.35-3-3s1.35-3 3-3 3 1.35 3 3-1.35 3-3 3z" />
-                  </svg>
                   <span className="hover:underline text-white">
                     123 Main St, Anytown, USA
                   </span>
                 </li>
                 <li className="flex items-center mb-4">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-2 text-gray-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M19 3a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14zM8 10.5A1.5 1.5 0 0 1 9.5 12h1A1.5 1.5 0 0 1 12 10.5V8A1.5 1.5 0 0 1 13.5 6h-3A1.5 1.5 0 0 1 9 7.5v3zm7-1h-3v-1h3v1z"
-                    />
-                  </svg>
                   <span className="hover:underline text-white">
                     contact@company.com
                   </span>
                 </li>
                 <li className="flex items-center">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    className="h-5 w-5 mr-2 text-gray-500"
-                    viewBox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M2 3a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v4a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3zm0 10a1 1 0 0 0 1 1h5v3l3-3h3a1 1 0 0 0 1-1v-4a1 1 0 0 0-1-1h-1V7a1 1 0 0 0-1-1H3a1 1 0 0 0-1 1v6zm15.293 6.707a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L19 17.586l2.293-2.293a1 1 0 0 1 1.414 1.414l-3 3z"
-                    />
-                  </svg>
                   <span className="hover:underline text-white">
                     +1234567890
                   </span>
@@ -207,15 +177,26 @@ function Footer() {
             </div>
           </div>
         </div>
-        <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-        <div className="sm:flex sm:items-center sm:justify-between">
-          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400">
-            © 2023{" "}
-            <Link href="https://flowbite.com/" className="hover:underline">
-              Flowbite™
-            </Link>
-            . All Rights Reserved.
+        <div className="my-6 sm:mx-auto lg:my-8 border-t border-gray-200 dark:border-gray-700"></div>
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between">
+          <span className="text-sm text-gray-500 sm:text-center dark:text-gray-400 mb-2 sm:mb-0">
+            © Copyright 2024{" "}
+            <a href="https://www.shaji.com/" className="hover:underline">
+              www.shaji.com
+            </a>{" "}
+            | All Rights Reserved |
           </span>
+          <div className="flex flex-wrap">
+            <span className="text-sm text-gray-500 dark:text-gray-400 mr-4 mb-2">
+              Terms & Conditions
+            </span>
+            <span className="text-sm text-gray-500 dark:text-gray-400 mr-4 mb-2">
+              Privacy Policy
+            </span>
+            <span className="text-sm text-gray-500 dark:text-gray-400 mb-2">
+              Sitemap
+            </span>
+          </div>
         </div>
       </div>
     </footer>

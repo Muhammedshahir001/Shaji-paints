@@ -66,6 +66,14 @@ code {
   }
   
 }
+@media  (max-width: 320px){
+  .footer-box{
+    padding-left: 0;
+    
+
+  }
+  
+}
 
 @media (min-width: 640px) {
   .md:flex {
