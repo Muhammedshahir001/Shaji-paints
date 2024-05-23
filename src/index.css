@@ -20,6 +20,79 @@ code {
 .show {
   display: block;
 }
+@media (max-width: 640px) {
+  .banner-content h1 {
+    font-size: 1.5rem;
+  }
+
+  .banner-content button {
+    width: 10rem; 
+    margin-top: 1.5rem; 
+  }
+}
+
+@media (max-width: 375px) {
+  .custom-heading {
+    font-size: 14px;
+  }
+  .custom-button {
+    width: 6rem;
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 320px) {
+  .custom-heading {
+    font-size: 11px;
+    margin-top: 2px;
+  }
+  .custom-button {
+    width: 5rem;
+    font-size: 8px;
+  }
+}
+@media  (max-width: 320px){
+  .left-image{
+    top: 0;
+
+  }
+  
+}
+@media  (max-width: 320px){
+  .right-image{
+    left: 0;
+    bottom: 0.5rem;
+
+  }
+  
+}
+
+@media (min-width: 640px) {
+  .md:flex {
+    flex-wrap: wrap;
+  }
+  .md:flex > * {
+    flex: 1 1 50%;
+    max-width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .md:flex > * {
+    flex: 1 1 33.33333%;
+    max-width: 33.33333%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .md:flex > * {
+    flex: 1 1 25%;
+    max-width: 25%;
+  }
+}
+
+
+
 
 
 

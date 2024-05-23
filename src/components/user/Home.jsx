@@ -64,18 +64,18 @@ function Home() {
               data-twe-carousel-item
               data-twe-carousel-active
             >
-              <div className="banner-content absolute top-0 left-0 right-0 p-8 text-center">
-                <h1 className="text-white text-4xl font-bold mb-4 ">
-                  Leading Manufacturer Of <br /> Industrial Paints
+              <div className="banner-content absolute top-0 left-0 right-0 p-4 sm:p-8 text-center">
+                <h1 className="text-white text-xl sm:text-4xl font-bold mb-2 sm:mb-4">
+                  Leading Manufacturer Of <br className="hidden sm:block" />{" "}
+                  Industrial Paints
                 </h1>
-                <button className="bg-green-700 text-white px-4 py-2 mt-10 rounded-2xl w-60 font-bold">
+                <button className="bg-green-700 text-white px-4 py-2 mt-6 sm:mt-10 rounded-2xl w-40 sm:w-60 font-bold">
                   Contact us
                 </button>
               </div>
-
               <img
                 src={banner1}
-                className="block max-w-full h-auto sm:h-2/4"
+                className="block max-w-full h-auto"
                 alt="Wild Landscape"
               />
             </div>
@@ -137,13 +137,13 @@ function Home() {
           <img
             src={aboutLeft}
             alt="Background"
-            className="absolute top-12 right-4 sm:right-10 md:right-20 lg:right-52 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24"
+            className="absolute top-12 right-4 sm:right-10 md:right-20 lg:right-52 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 left-image"
           />
 
           <img
             src={aboutRight}
             alt="Background"
-            className="absolute bottom-10 left-4 sm:left-10 md:left-20 lg:left-52 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24"
+            className="absolute bottom-10 left-4 sm:left-10 md:left-20 lg:left-52 w-16 h-16 sm:w-20 sm:h-20 md:w-24 md:h-24 right-image"
           />
 
           {features.map((feature, index) => (
@@ -335,20 +335,20 @@ function Home() {
         {/* <img src={image44} alt="" /> */}
 
         <section className="relative flex justify-center items-center">
-          <div className="relative w-full ">
+          <div className="relative w-full">
             <img
               src={image45}
               alt=""
               className="w-full h-auto"
               style={{ display: "block" }}
             />
-            <div className="absolute inset-0    flex flex-col justify-center items-center text-center p-4 h-">
-              <h2 className="text-black md:pt-10 mb-1 -mt-[15px] sm:pt-4 lg:pt-0  lg:text-3xl md:text-2xl sm:text-2xl text-[13px] pt-[52px] font-extrabold leading-tight">
+            <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
+              <h2 className="text-black mb-1  md:pt-10 lg:pt-0 lg:text-3xl md:text-2xl  text-[13px] sm:text-base font-extrabold leading-tight pt-4 sm:pt-0 custom-heading">
                 The Paints Recommended <br /> By Professionals
               </h2>
               <button
                 to="#"
-                className="bg-gray-900  md:w-28  w-[6rem]  text-[9px] mb-[30px] lg:w-full sm:text-sm sm:mb-10 lg:mb-0 text-white px-4 py-2 mt-1 md:mb-10 lg:mt-8 rounded-2xl max-w-xs md:max-w-md font-bold text-center block"
+                className="bg-gray-900 text-white px-4 py-2 mt-1 mb-4 sm:mb-10 md:mb-10 lg:mt-8 rounded-2xl w-[6rem] md:w-28 lg:w-full sm:text-sm text-[9px]  font-bold text-center block max-w-xs md:max-w-md custom-button"
               >
                 Learn More
               </button>
