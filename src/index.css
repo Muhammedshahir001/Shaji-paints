@@ -74,9 +74,10 @@ code {
   }
   
 }
-  @media only screen and (max-device-width: 768px) {
+  @media only screen and (max-device-width: 360px) {
         .logo{
           width: 5rem;
+          height: 1rem;
         }
     }
 
