@@ -19,7 +19,7 @@ function Header() {
         <div className=" flex gap-10 justify-between  p-5">
           <a
             href="#"
-            className="flex items-center space-x-3 rtl:space-x-reverse"
+            className="flex items-center space-x-3 rtl:space-x-reverse ml-[5%]"
           >
             <img src={logo} className="h-8" alt="Flowbite Logo" />
           </a>
