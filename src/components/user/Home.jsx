@@ -98,7 +98,7 @@ function Home() {
               Manufactures{" "}
             </h2>
             <div className="md:block flex justify-center">
-              <p className=" w-2/3 md:w-full text-lg text-gray-700 mb-4 text-justify">
+              <p className=" w-2/3  text-lg text-gray-700 mb-4 justify-center">
                 Shaji as focused on formulating new materials to meet emerging
                 needs. We’re experienced in serving a wide variety of fields,
                 not just because of our technical knowledge, but also just from

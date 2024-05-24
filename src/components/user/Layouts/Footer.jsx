@@ -170,7 +170,7 @@ function Footer() {
                 </li>
                 <li className="flex items-center">
                   <span className="hover:underline text-white">
-                    +1234567890
+                    +971 56 54 43 641
                   </span>
                 </li>
               </ul>

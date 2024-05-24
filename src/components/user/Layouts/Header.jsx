@@ -18,7 +18,7 @@ function Header() {
       <div className="hidden lg:block">
         <div className=" flex gap-10 justify-between  p-5">
           <div className="ml-[5%]">
-            <img src={logo} className="w-32 h-8 lg:w-48 lg:h-12" alt="" />
+            <img src={logo} className="w-full h-8" alt="" />
           </div>
           <div
             className="flex md:order-2 space-x-3  rtl:space-x-reverse"
@@ -93,7 +93,6 @@ function Header() {
               {/* Contact Button */}
               <li className="mt-4 lg:mt-0">
                 {" "}
-                {/* Adding margin top only on smaller screens */}
                 <Link
                   to="#"
                   className="flex items-center justify-center py-2 px-4 w-32 text-white rounded-full border border-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white lg:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
