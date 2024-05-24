@@ -18,7 +18,7 @@ function Header() {
       <div className="hidden lg:block">
         <div className=" flex gap-10 justify-between  p-5">
           <div className="flex justify-start items-center ml-[5%]">
-            <img src={logo} className="w-auto h-8" alt="Logo" />
+            <img src={logo} className="w-fit h-8 px-1" alt="Logo" />
           </div>
 
           <div
