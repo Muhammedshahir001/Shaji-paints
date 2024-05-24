@@ -23,9 +23,6 @@ function Header() {
               class="h-8"
               alt="Flowbite Logo"
             />
-            <span class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">
-              Flowbite
-            </span>
           </a>
 
           <div
@@ -116,9 +113,13 @@ function Header() {
       <div className="block lg:hidden">
         <div className=" flex flex-col gap-10 justify-between  p-2">
           <div className="flex justify-between p-2 w-full">
-            <div className="ml-[5%]">
-              <img src={logo} className="w-fit h-8" alt="" />
-            </div>
+            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+              <img
+                src="https://flowbite.com/docs/images/logo.svg"
+                class="h-8"
+                alt="Flowbite Logo"
+              />
+            </a>
             {/* <div
                             className="flex md:order-2 space-x-3  rtl:space-x-reverse"
                             style={{ zIndex: 100, position: "relative" }}
