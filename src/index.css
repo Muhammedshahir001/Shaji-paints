@@ -74,6 +74,13 @@ code {
   }
   
 }
+  @media only screen and (max-device-width: 768px) {
+        .logo{
+          width: 5rem;
+        }
+    }
+
+
 
 @media (min-width: 640px) {
   .md:flex {
