@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import Header from "./Layouts/Header";
 import Footer from "./Layouts/Footer";
 import aboutImg from "../../images/About-bg.png";
@@ -22,31 +22,63 @@ function Home() {
       title: "Distibution",
       description:
         "Our distribution channel will be our reference to maintain our level of excellence.",
-      icon: "🤝", // Placeholder for the icon
+      icon: "🤝", 
       bgColor: "bg-yellow-500",
     },
     {
       title: "Competitive Price",
       description:
         "Point of balance between the profitability and offering a competitive price.",
-      icon: "🏷️", // Placeholder for the icon
+      icon: "🏷️",
       bgColor: "bg-pink-500",
     },
     {
       title: "Experience",
       description:
         "More than 30 years of experience in manufacturing printing consumables.",
-      icon: "💼", // Placeholder for the icon
+      icon: "💼", 
       bgColor: "bg-green-500",
     },
     {
       title: "Painting Supplies",
       description:
         "At SHAJI you can buy Original consumables, remanufactured paints & Color Accessories.",
-      icon: "🎨", // Placeholder for the icon
+      icon: "🎨", 
       bgColor: "bg-gray-800",
     },
   ];
+   const countersData = [
+     { id: 1, target: 25, title: "Year Of Experience" },
+     { id: 2, target: 182, title: "Employees" },
+     { id: 3, target: 196, title: "Distributors" },
+     { id: 4, target: 245, title: "Happy Customers" },
+     { id: 5, target: 18, title: "Products" },
+   ];
+
+   const [counters, setCounters] = useState(
+     countersData.map((counter) => ({ ...counter, value: 0 }))
+   );
+
+   useEffect(() => {
+     const updateCount = () => {
+       setCounters((prevCounters) =>
+         prevCounters.map((counter) => {
+           const { target, value } = counter;
+           const speed = 200;
+           const increment = target / speed;
+
+           if (value < target) {
+             return { ...counter, value: Math.min(value + increment, target) };
+           }
+           return counter;
+         })
+       );
+     };
+
+     const interval = setInterval(updateCount, 30);
+
+     return () => clearInterval(interval);
+   }, []);
   return (
     <>
       <Header />
@@ -213,65 +245,27 @@ function Home() {
           <div className="container mx-auto">
             <div className="counter-inner">
               <div className="flex flex-wrap justify-center gap-6">
-                <div className="counter-item text-center p-4 bg-white shadow-lg rounded-lg w-48">
-                  <div className="counter-wrap">
-                    <span className="counter text-4xl text-green-700 font-bold">
-                      25
-                    </span>
-                    <span className="suffix text-2xl text-green-700">+</span>
+                {counters.map(({ id, value, target, title }) => (
+                  <div
+                    key={id}
+                    className="counter-item text-center p-4 bg-white shadow-lg rounded-lg w-48"
+                  >
+                    <div className="counter-wrap">
+                      <span className="counter text-4xl text-green-700 font-bold">
+                        {Math.ceil(value)}
+                      </span>
+                      <span className="suffix text-2xl text-green-700">+</span>
+                    </div>
+                    <h6 className="title text-base text-green-700 font-semibold mt-2">
+                      {title}
+                    </h6>
                   </div>
-                  <h6 className="title text-base text-green-700 font-semibold mt-2">
-                    Year Of Experience
-                  </h6>
-                </div>
-                <div className="counter-item text-center p-4 bg-white shadow-lg rounded-lg w-48">
-                  <div className="counter-wrap">
-                    <span className="counter text-4xl text-green-700 font-bold">
-                      182
-                    </span>
-                    <span className="suffix text-2xl text-green-700">+</span>
-                  </div>
-                  <h6 className="title text-base text-green-700 font-semibold mt-2">
-                    Employees
-                  </h6>
-                </div>
-                <div className="counter-item text-center p-4 bg-white shadow-lg rounded-lg w-48">
-                  <div className="counter-wrap">
-                    <span className="counter text-4xl font-bold text-green-700">
-                      196
-                    </span>
-                    <span className="suffix text-2xl text-green-700">+</span>
-                  </div>
-                  <h6 className="title text-base font-semibold mt-2 text-green-700">
-                    Distributors
-                  </h6>
-                </div>
-                <div className="counter-item text-center p-4 bg-white shadow-lg rounded-lg w-48">
-                  <div className="counter-wrap">
-                    <span className="counter text-4xl font-bold text-green-700">
-                      245
-                    </span>
-                    <span className="suffix text-2xl text-green-700">+</span>
-                  </div>
-                  <h6 className="title text-base font-semibold mt-2 text-green-700">
-                    Happy Customers
-                  </h6>
-                </div>
-                <div className="counter-item text-center p-4 bg-white shadow-lg rounded-lg w-48">
-                  <div className="counter-wrap">
-                    <span className="counter text-4xl font-bold text-green-700">
-                      18
-                    </span>
-                    <span className="suffix text-2xl text-green-700">+</span>
-                  </div>
-                  <h6 className="title text-base font-semibold mt-2 text-green-700">
-                    Products
-                  </h6>
-                </div>
+                ))}
               </div>
             </div>
           </div>
         </section>
+
         <section className="bg-white h-auto w-full flex flex-col md:flex-row items-center justify-center md:justify-end pt-16 px-4 md:px-0">
           <div className="flex flex-col md:flex-row items-center justify-center w-full md:w-5/6">
             <div className="w-full md:w-1/3 text-center md:text-left mb-8 md:mb-0">
@@ -361,6 +355,7 @@ function Home() {
           </div>
         </section>
       </div>
+
       <Footer />
     </>
   );

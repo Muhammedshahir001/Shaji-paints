@@ -17,9 +17,10 @@ function Header() {
     >
       <div className="hidden lg:block">
         <div className=" flex gap-10 justify-between  p-5">
-          <div className="ml-[5%]">
-            <img src={logo} className="w-fit h-8" alt="" />
+          <div className="flex justify-start items-center ml-[5%]">
+            <img src={logo} className="w-auto h-8" alt="Logo" />
           </div>
+
           <div
             className="flex md:order-2 space-x-3  rtl:space-x-reverse"
             style={{ zIndex: 100, position: "relative" }}
