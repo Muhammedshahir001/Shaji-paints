@@ -22,7 +22,7 @@ function Home() {
       title: "Distibution",
       description:
         "Our distribution channel will be our reference to maintain our level of excellence.",
-      icon: "🤝", 
+      icon: "🤝",
       bgColor: "bg-yellow-500",
     },
     {
@@ -36,49 +36,49 @@ function Home() {
       title: "Experience",
       description:
         "More than 30 years of experience in manufacturing printing consumables.",
-      icon: "💼", 
+      icon: "💼",
       bgColor: "bg-green-500",
     },
     {
       title: "Painting Supplies",
       description:
         "At SHAJI you can buy Original consumables, remanufactured paints & Color Accessories.",
-      icon: "🎨", 
+      icon: "🎨",
       bgColor: "bg-gray-800",
     },
   ];
-   const countersData = [
-     { id: 1, target: 25, title: "Year Of Experience" },
-     { id: 2, target: 182, title: "Employees" },
-     { id: 3, target: 196, title: "Distributors" },
-     { id: 4, target: 245, title: "Happy Customers" },
-     { id: 5, target: 18, title: "Products" },
-   ];
+  const countersData = [
+    { id: 1, target: 25, title: "Year Of Experience" },
+    { id: 2, target: 182, title: "Employees" },
+    { id: 3, target: 196, title: "Distributors" },
+    { id: 4, target: 245, title: "Happy Customers" },
+    { id: 5, target: 18, title: "Products" },
+  ];
 
-   const [counters, setCounters] = useState(
-     countersData.map((counter) => ({ ...counter, value: 0 }))
-   );
+  const [counters, setCounters] = useState(
+    countersData.map((counter) => ({ ...counter, value: 0 }))
+  );
 
-   useEffect(() => {
-     const updateCount = () => {
-       setCounters((prevCounters) =>
-         prevCounters.map((counter) => {
-           const { target, value } = counter;
-           const speed = 200;
-           const increment = target / speed;
+  useEffect(() => {
+    const updateCount = () => {
+      setCounters((prevCounters) =>
+        prevCounters.map((counter) => {
+          const { target, value } = counter;
+          const speed = 200;
+          const increment = target / speed;
 
-           if (value < target) {
-             return { ...counter, value: Math.min(value + increment, target) };
-           }
-           return counter;
-         })
-       );
-     };
+          if (value < target) {
+            return { ...counter, value: Math.min(value + increment, target) };
+          }
+          return counter;
+        })
+      );
+    };
 
-     const interval = setInterval(updateCount, 30);
+    const interval = setInterval(updateCount, 30);
 
-     return () => clearInterval(interval);
-   }, []);
+    return () => clearInterval(interval);
+  }, []);
   return (
     <>
       <Header />
@@ -130,7 +130,7 @@ function Home() {
               Manufactures{" "}
             </h2>
             <div className="md:block flex justify-center">
-              <p className=" w-2/3  text-lg text-gray-700 mb-4 justify-center">
+              <p className=" w-2/3 text-lg text-gray-700 mb-4 text-justify">
                 Shaji as focused on formulating new materials to meet emerging
                 needs. We’re experienced in serving a wide variety of fields,
                 not just because of our technical knowledge, but also just from
@@ -294,7 +294,7 @@ function Home() {
               <img
                 src={menuImage}
                 alt=""
-                className="w-full md:max-w-md object-cover"
+                className="w-full pb-10 md:max-w-md object-cover"
               />
             </div>
           </div>

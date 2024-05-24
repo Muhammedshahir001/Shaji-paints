@@ -17,16 +17,11 @@ function Header() {
     >
       <div className="hidden lg:block">
         <div className=" flex gap-10 justify-between  p-5">
-          <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
-            <img
-              src="https://flowbite.com/docs/images/logo.svg"
-              class="h-8"
-              alt="Flowbite Logo"
-            />
-          </a>
-
+          <div className="ml-[5%]">
+            <img src={logo} className="w-fit  h-8" alt="" />
+          </div>
           <div
-            className="flex md:order-2 space-x-3 rtl:space-x-reverse"
+            className="flex md:order-2 space-x-3  rtl:space-x-reverse"
             style={{ zIndex: 100, position: "relative" }}
           ></div>
           <div
@@ -98,6 +93,7 @@ function Header() {
               {/* Contact Button */}
               <li className="mt-4 lg:mt-0">
                 {" "}
+                {/* Adding margin top only on smaller screens */}
                 <Link
                   to="#"
                   className="flex items-center justify-center py-2 px-4 w-32 text-white rounded-full border border-white hover:bg-gray-100 md:hover:bg-transparent md:hover:text-white lg:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700"
@@ -113,18 +109,14 @@ function Header() {
       <div className="block lg:hidden">
         <div className=" flex flex-col gap-10 justify-between  p-2">
           <div className="flex justify-between p-2 w-full">
-            <a href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <Link href="#" class="flex items-center space-x-3 rtl:space-x-reverse">
               <img
-                src="https://flowbite.com/docs/images/logo.svg"
+                src={logo}
                 class="h-8"
-                alt="Flowbite Logo"
+                alt=""
               />
-            </a>
-            {/* <div
-                            className="flex md:order-2 space-x-3  rtl:space-x-reverse"
-                            style={{ zIndex: 100, position: "relative" }}
-                        >
-                        </div> */}
+            </Link>
+
             <div>
               <button
                 onClick={toggleMenu}
