@@ -111,7 +111,7 @@ function Home() {
                 <p className="text-white   font-semibold text-[10px] sm:text-lg md:text-xl lg:text-2xl xl:text-sm">
                   More than 30 years of experience in paint manufacturing.
                 </p>
-                <button className="bg-green-700 text-white px-4 py-2 mt-6 sm:mt-10 rounded-2xl w-40 sm:w-60 font-bold">
+                <button className="bg-green-700 shadow-black text-white px-4 py-2 mt-6 sm:mt-10 rounded-2xl w-40 sm:w-60 font-bold">
                   Contact us
                 </button>
               </div>
@@ -272,7 +272,7 @@ function Home() {
               <div>
                 <Link
                   to="#"
-                  className="bg-gray-900 text-white px-4 py-2 mt-6  shadow-md mb-20 rounded-2xl w-full md:w-60 font-bold text-center block" // Changed mt-32 to mt-6
+                  className="bg-gray-900 text-white px-4 py-2 mt-6  shadow-black mb-20 rounded-2xl w-full md:w-60 font-bold text-center block" // Changed mt-32 to mt-6
                   style={{ display: "block" }} // Ensuring the link is displayed as a block element
                 >
                   Learn More
@@ -359,7 +359,7 @@ function Home() {
             />
             <div className="absolute inset-0 flex justify-center  items-center">
               {/* Container */}
-              <div className="bg-white lg:mb-24  rounded-lg p-6 text-black ml-0 md:ml-[25rem]">
+              <div className="bg-white shadow-black lg:mb-24  rounded-lg lg:p-6 p-3 text-black ml-0 md:ml-[25rem]">
                 {/* Heading */}
                 <h2 className="text-2xl w-full md:w-64 font-bold mb-4">
                   Need to try our <br />
@@ -368,9 +368,9 @@ function Home() {
                 {/* Button */}
                 <Link
                   to="#"
-                  className="bg-green-700 text-white px-4 py-2 mt-10 rounded-2xl w-full md:w-60 font-bold text-center block"
+                  className="bg-green-700 shadow-black text-white px-4 py-2 mt-10 rounded-2xl w-full md:w-60 font-bold text-center block"
                 >
-                  Learn More
+                  Book A Demo 
                 </Link>
               </div>
             </div>
@@ -384,7 +384,7 @@ function Home() {
             <img
               src={image45}
               alt=""
-              className="w-full lg:h-auto h-28 mb-3"
+              className="w-full lg:h-auto h-28 mb-3  button-img"
               style={{ display: "block" }}
             />
             <div className="absolute inset-0 flex flex-col justify-center items-center text-center p-4">
@@ -393,9 +393,9 @@ function Home() {
               </h2>
               <button
                 to="#"
-                className="bg-gray-900 text-white px-4 py-2 mt-1 mb-4 sm:mb-10 md:mb-10 lg:mt-8 rounded-2xl w-[6rem] md:w-28 lg:w-full sm:text-sm text-[9px]  font-bold text-center block max-w-xs md:max-w-md custom-button"
+                className="bg-gray-900 shadow-black text-white px-4 py-2 mt-1 mb-4 sm:mb-10 md:mb-10 lg:mt-8 rounded-2xl w-[6rem] md:w-48 lg:w-full sm:text-sm text-[9px]  font-bold text-center block max-w-xs md:max-w-md custom-button"
               >
-                Learn More
+                Become A Distributor
               </button>
             </div>
             <img

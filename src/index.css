@@ -2,19 +2,17 @@
 @tailwind components;
 @tailwind utilities;
 
-
-
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
 .show {
@@ -26,8 +24,8 @@ code {
   }
 
   .banner-content button {
-    width: 10rem; 
-    margin-top: 1.5rem; 
+    width: 10rem;
+    margin-top: 1.5rem;
   }
 }
 
@@ -36,8 +34,8 @@ code {
     font-size: 14px;
   }
   .custom-button {
-    width: 6rem;
-    font-size: 9px;
+    width: 8rem;
+    font-size: 8px;
   }
 }
 
@@ -47,54 +45,52 @@ code {
     margin-top: 2px;
   }
   .custom-button {
-    width: 5rem;
+    width: 8rem;
     font-size: 8px;
   }
 }
-@media  (max-width: 320px){
-  .left-image{
+@media (max-width: 320px) {
+  .left-image {
     top: 0;
-
   }
-  
 }
+@media (max-width: 425px) {
+  .custom-button {
+     width: 8rem;
+    font-size: 8px;
+  }
+}
+
 
 /* Add this CSS to your stylesheet */
 @media (max-width: 375px) {
   .left-image {
-       top: 2px;
-        right: -20px;
-        width: 10rem;
-        height: 12rem;
+    top: 2px;
+    right: -20px;
+    width: 10rem;
+    height: 12rem;
   }
 }
 @media (max-width: 375px) {
   .right-image {
-       bottom: 2px;
-        left: -14px;
-        width: 10rem;
-        height: 12rem;
+    bottom: 2px;
+    left: -14px;
+    width: 10rem;
+    height: 12rem;
   }
 }
 
-@media  (max-width: 320px){
-  .right-image{
+@media (max-width: 320px) {
+  .right-image {
     left: 0;
     bottom: 0.5rem;
-
   }
-  
 }
-@media  (max-width: 320px){
-  .footer-box{
+@media (max-width: 320px) {
+  .footer-box {
     padding-left: 0;
-    
-
   }
-  
 }
-
-
 
 @media (min-width: 640px) {
   .md:flex {
@@ -112,6 +108,11 @@ code {
     max-width: 33.33333%;
   }
 }
+@media (min-width: 768px) {
+  .button-img {
+    height: 10rem;
+  }
+}
 
 @media (min-width: 1024px) {
   .md:flex > * {
@@ -127,16 +128,11 @@ code {
   }
 }
 
-
 @media (max-width: 375px) {
   .icon-img {
-
     padding-left: 2px;
-
   }
 }
-
-
 
 /* @media (min-width: 640px) {
   .text-justify {
@@ -150,8 +146,6 @@ code {
   }
 } */
 
-
-.right-arrow{
+.right-arrow {
   color: #fff;
 }
-
