@@ -58,6 +58,25 @@ code {
   }
   
 }
+
+/* Add this CSS to your stylesheet */
+@media (max-width: 375px) {
+  .left-image {
+       top: 2px;
+        right: -20px;
+        width: 10rem;
+        height: 12rem;
+  }
+}
+@media (max-width: 375px) {
+  .right-image {
+       bottom: 2px;
+        left: -14px;
+        width: 10rem;
+        height: 12rem;
+  }
+}
+
 @media  (max-width: 320px){
   .right-image{
     left: 0;
@@ -109,5 +128,30 @@ code {
 }
 
 
+@media (max-width: 375px) {
+  .icon-img {
 
+    padding-left: 2px;
+
+  }
+}
+
+
+
+/* @media (min-width: 640px) {
+  .text-justify {
+    word-spacing: normal;
+  }
+} */
+
+/* @media (max-width: 640px) {
+  .text-justify {
+    word-spacing: -1px;
+  }
+} */
+
+
+.right-arrow{
+  color: #fff;
+}
 
